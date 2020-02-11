@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace LinqExercise
 {
     internal class Employee
@@ -24,6 +25,11 @@ namespace LinqExercise
             LastName = lastName;
             Age = age;
             YearsOfExperience = yearsOfExperience;
+        }
+
+        internal static IEnumerable<string> Where(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
         }
     }
 }
